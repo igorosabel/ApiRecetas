@@ -1,0 +1,410 @@
+{
+	"version": "5.6.4",
+	"updates": {
+		"5.6.4": {
+			"message": "5.6.4 - Corrección en OModel-getModel",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OModel.php"
+			]
+		},
+		"5.6.3": {
+			"message": "5.6.3 - Corrección en OTools-updateUrls",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OTools.php"
+			]
+		},
+		"5.6.2": {
+			"message": "5.6.2 - Corrección en OModel",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OModel.php"
+			]
+		},
+		"5.6.1": {
+			"message": "5.6.1 - Correcciones por ORequest y para tasks",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OCore.php",
+				"ofw/core/OTools.php"
+			]
+		},
+		"5.6.0": {
+			"message": "5.6.0 - Nuevo ORequest",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OCore.php",
+				"ofw/core/OSession.php",
+				"ofw/core/OTools.php",
+				"ofw/core/ORequest.php"
+			]
+		},
+		"5.5.2": {
+			"message": "5.5.2 - Corrección en parámetros de entrada y en código de ejemplo",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OTools.php"
+			]
+		},
+		"5.5.1": {
+			"message": "5.5.1 - Corrección de tipado en updateUrls",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OTools.php"
+			]
+		},
+		"5.5.0": {
+			"message": "5.5.0 - Renombro Composer a Extractor",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/locale/en.php",
+				"ofw/locale/es.php",
+				"ofw/task/backupAll.php",
+				"ofw/task/extractor.php"
+			],
+			"deletes": [
+				"ofw/task/composer.php"
+			]
+		},
+		"5.4.1": {
+			"message": "5.4.1 - Corrección en locales",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/locale/en.php",
+				"ofw/locale/es.php",
+				"ofw/task/plugins.php"
+			]
+		},
+		"5.4.0": {
+			"message": "5.4.0 - Nuevos módulos y acciones tipados",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OTools.php"
+			]
+		},
+		"5.3.4": {
+			"message": "5.3.4 - Corrección en OConfig (SMTP)",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OConfig.php"
+			]
+		},
+		"5.3.3": {
+			"message": "5.3.3 - Corrección en ODB",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/ODB.php"
+			]
+		},
+		"5.3.2": {
+			"message": "5.3.2 - Corrección en OTemplate",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OTemplate.php"
+			]
+		},
+		"5.3.1": {
+			"message": "5.3.1 - Corrección en OConfig",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OConfig.php"
+			]
+		},
+		"5.3.0": {
+			"message": "5.3.0 - Refactorización y tipado fuerte",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw.php",
+				"ofw/core/OCache.php",
+				"ofw/core/OColors.php",
+				"ofw/core/OConfig.php",
+				"ofw/core/OController.php",
+				"ofw/core/OCookie.php",
+				"ofw/core/OCore.php",
+				"ofw/core/ODB.php",
+				"ofw/core/OForm.php",
+				"ofw/core/OLog.php",
+				"ofw/core/OModel.php",
+				"ofw/core/OPlugin.php",
+				"ofw/core/OService.php",
+				"ofw/core/OSession.php",
+				"ofw/core/OTemplate.php",
+				"ofw/core/OTools.php",
+				"ofw/core/OUpdate.php",
+				"ofw/core/OUrl.php",
+				"ofw/locale/en.php",
+				"ofw/task/backupAll.php",
+				"ofw/task/backupDB.php",
+				"ofw/task/composer.php",
+				"ofw/task/generateModel.php",
+				"ofw/task/plugins.php",
+				"ofw/task/update.php",
+				"ofw/task/updateCheck.php",
+				"ofw/task/updateUrls.php",
+				"ofw/task/version.php",
+				"web/index.php"
+			]
+		},
+		"5.2.1": {
+			"message": "5.2.1 - Corrección en OService",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OService.php"
+			]
+		},
+		"5.2.0": {
+			"message": "5.2.0 - Nuevo OService",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OController.php",
+				"ofw/core/OService.php"
+			],
+			"postinstall": true
+		},
+		"5.1.0": {
+			"message": "5.1.0 - Mejoras en OModel y logs internos",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OCache.php",
+				"ofw/core/OController.php",
+				"ofw/core/OCookie.php",
+				"ofw/core/OLog.php",
+				"ofw/core/OModel.php",
+				"ofw/core/OSession.php",
+				"ofw/core/OTemplate.php"
+			]
+		},
+		"5.0.4": {
+			"message": "5.0.4 - Corrección en OCache",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OCache.php"
+			]
+		},
+		"5.0.3": {
+			"message": "5.0.3 - Corrección en OUpdate",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OUpdate.php"
+			]
+		},
+		"5.0.2": {
+			"message": "5.0.2 - Corrección en OModel y en OUrl",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OModel.php",
+				"ofw/core/OUrl.php"
+			]
+		},
+		"5.0.1": {
+			"message": "5.0.1 - Corrección en filtros",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/core/version.json",
+				"ofw/core/OTools.php",
+				"ofw/core/OCore.php"
+			]
+		},
+		"5.0.0": {
+			"message": "5.0.0 - Versión 5.0",
+			"files": [
+				"CHANGELOG.md",
+				"ofw.php",
+				"ofw/lib/pdf/pdf.txt",
+				"ofw/plugins/.gitignore",
+				"ofw/task/backupAll.php",
+				"ofw/task/backupDB.php",
+				"ofw/task/composer.php",
+				"ofw/task/generateModel.php",
+				"ofw/task/plugins.php",
+				"ofw/task/update.php",
+				"ofw/task/updateCheck.php",
+				"ofw/task/updateUrls.php",
+				"ofw/task/version.php",
+				"web/index.php",
+				"ofw/locale/en.php",
+				"ofw/locale/es.php",
+				"ofw/core/OCache.php",
+				"ofw/core/OColors.php",
+				"ofw/core/OConfig.php",
+				"ofw/core/OController.php",
+				"ofw/core/OCookie.php",
+				"ofw/core/OCore.php",
+				"ofw/core/ODB.php",
+				"ofw/core/OForm.php",
+				"ofw/core/OLog.php",
+				"ofw/core/OModel.php",
+				"ofw/core/OPlugin.php",
+				"ofw/core/OService.php",
+				"ofw/core/OSession.php",
+				"ofw/core/OTemplate.php",
+				"ofw/core/OTools.php",
+				"ofw/core/OUpdate.php",
+				"ofw/core/OUrl.php",
+				"ofw/core/error.php",
+				"ofw/core/version.json"
+			],
+			"deletes": [
+				"ofw/base/OBase.php",
+				"ofw/base/OCache.php",
+				"ofw/base/OCacheContainer.php",
+				"ofw/base/OColors.php",
+				"ofw/base/OConfig.php",
+				"ofw/base/OController.php",
+				"ofw/base/OCookie.php",
+				"ofw/base/ODB.php",
+				"ofw/base/ODBContainer.php",
+				"ofw/base/OForm.php",
+				"ofw/base/OLog.php",
+				"ofw/base/OPlugin.php",
+				"ofw/base/OService.php",
+				"ofw/base/OSession.php",
+				"ofw/base/OTemplate.php",
+				"ofw/base/OUrl.php",
+				"ofw/base/base.php",
+				"ofw/base/start.php",
+				"ofw/base/version.json"
+			]
+		},
+		"4.20.0": {
+			"message": "4.20.0 - Refactorización y limpieza",
+			"files": [
+				"CHANGELOG.md",
+				"ofw.php",
+				"ofw/base/OBase.php",
+				"ofw/base/OCache.php",
+				"ofw/base/OCacheContainer.php",
+				"ofw/base/OConfig.php",
+				"ofw/base/OController.php",
+				"ofw/base/OCookie.php",
+				"ofw/base/ODB.php",
+				"ofw/base/ODBContainer.php",
+				"ofw/base/OForm.php",
+				"ofw/base/OLog.php",
+				"ofw/base/OPlugin.php",
+				"ofw/base/OService.php",
+				"ofw/base/OSession.php",
+				"ofw/base/OTemplate.php",
+				"ofw/base/OUrl.php",
+				"ofw/base/base.php",
+				"ofw/base/start.php",
+				"ofw/base/version.json",
+				"ofw/task/backupAll.php",
+				"ofw/task/backupDB.php",
+				"ofw/task/composer.php",
+				"ofw/task/generateModel.php",
+				"ofw/task/plugins.php",
+				"ofw/task/update.php",
+				"ofw/task/updateCheck.php",
+				"ofw/task/updateUrls.php",
+				"ofw/task/version.php",
+				"web/.htaccess",
+				"web/index.php"
+			]
+		},
+		"4.19.0": {
+			"message": "4.19.0 - Corrección en ODB para transacciones",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/base/version.json",
+				"ofw/base/ODB.php"
+			]
+		},
+		"4.18.1": {
+			"message": "4.18.1 - Corrección en cache container",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/base/version.json",
+				"ofw/base/OCacheContainer.php"
+			]
+		},
+		"4.18.0": {
+			"message": "4.18.0 - Nuevo cache container",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/base/version.json",
+				"ofw/base/base.php",
+				"ofw/base/OCacheContainer.php",
+				"ofw/base/start.php"
+			]
+		},
+		"4.17.1": {
+			"message": "4.17.1 - Corrección en ODB al lanzar la excepción",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/base/version.json",
+				"ofw/base/ODB.php"
+			]
+		},
+		"4.17.0": {
+			"message": "4.17.0 - Corrección en valores por defecto de la DB y gestión de errores SQL",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/base/version.json",
+				"ofw/base/OBase.php",
+				"ofw/base/ODB.php",
+				"ofw/base/ODBContainer.php"
+			]
+		},
+		"4.16.0": {
+			"message": "4.16.0 - Nuevo sistema de Plugins",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/base/version.json",
+				"ofw/base/OConfig.php",
+				"ofw/base/OTemplate.php",
+				"ofw/base/OUrl.php",
+				"ofw/base/base.php",
+				"ofw/base/start.php",
+				"ofw/base/OPlugin.php",
+				"ofw/plugins/.gitignore",
+				"ofw/plugins/plugins.txt",
+				"ofw/task/plugins.php"
+			],
+			"deletes": [
+				"ofw/base/OBrowser.php",
+				"ofw/base/OCrypt.php",
+				"ofw/base/OEmail.php",
+				"ofw/base/OFTP.php",
+				"ofw/base/OFile.php",
+				"ofw/base/OImage.php",
+				"ofw/base/OPDF.php",
+				"ofw/base/OToken.php",
+				"ofw/base/OTranslate.php",
+				"ofw/lib/email/.gitignore",
+				"ofw/lib/email/email.txt"
+			]
+		},
+		"4.15.0": {
+			"message": "4.15.0 - Cambio en collate por defecto a utf8mb4_unicode_ci y charset por defecto a utf8mb4",
+			"files": [
+				"CHANGELOG.md",
+				"ofw/base/version.json",
+				"ofw/base/OConfig.php",
+				"ofw/base/OBase.php"
+			]
+		}
+	}
+}
