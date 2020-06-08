@@ -4,7 +4,7 @@
     "user": "recetas",
     "pass": "a86*Wd3x",
     "name": "recetas",
-    "charset": "utf8mb4"
+    "charset": "utf8mb4",
     "collate": "utf8mb4_unicode_ci"
   },
   "base_url": "https://apirecetas.osumi.es",
