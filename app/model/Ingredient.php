@@ -6,52 +6,52 @@ class Ingredient extends OModel {
 		$table_name  = 'ingredient';
 		$model = [
 			'id' => [
-				'type'    => Base::PK,
+				'type'    => OCore::PK,
 				'comment' => 'Id único de cada ingrediente'
 			],
 			'id_user' => [
-				'type'    => Base::NUM,
+				'type'     => OCore::NUM,
 				'nullable' => true,
-				'default' => null,
-				'ref' => 'user.id',
-				'comment' => 'Id del usuario que crea el ingrediente o nulo si es de la aplicación'
+				'default'  => null,
+				'ref'      => 'user.id',
+				'comment'  => 'Id del usuario que crea el ingrediente o nulo si es de la aplicación'
 			],
 			'amount' => [
-				'type'    => Base::NUM,
+				'type'     => OCore::NUM,
 				'nullable' => false,
-				'default' => null,
-				'comment' => 'Cantidad del ingrediente'
+				'default'  => null,
+				'comment'  => 'Cantidad del ingrediente'
 			],
 			'id_unit' => [
-				'type'    => Base::NUM,
+				'type'     => OCore::NUM,
 				'nullable' => false,
-				'default' => null,
-				'ref' => 'unit.id',
-				'comment' => 'Id de la unidad de medida'
+				'default'  => null,
+				'ref'      => 'unit.id',
+				'comment'  => 'Id de la unidad de medida'
 			],
 			'name' => [
-				'type'    => Base::TEXT,
+				'type'     => OCore::TEXT,
 				'nullable' => false,
-				'default' => null,
-				'size' => 50,
-				'comment' => 'Nombre del ingrediente'
+				'default'  => null,
+				'size'     => 50,
+				'comment'  => 'Nombre del ingrediente'
 			],
 			'id_group' => [
-				'type'    => Base::NUM,
+				'type'     => OCore::NUM,
 				'nullable' => true,
-				'default' => null,
-				'ref' => 'group.id',
-				'comment' => 'Id del grupo de alimentos'
+				'default'  => null,
+				'ref'      => 'group.id',
+				'comment'  => 'Id del grupo de alimentos'
 			],
 			'created_at' => [
-				'type'    => Base::CREATED,
+				'type'    => OCore::CREATED,
 				'comment' => 'Fecha de creación del registro'
 			],
 			'updated_at' => [
-				'type'    => Base::UPDATED,
+				'type'     => OCore::UPDATED,
 				'nullable' => true,
-				'default' => null,
-				'comment' => 'Fecha de última modificación del registro'
+				'default'  => null,
+				'comment'  => 'Fecha de última modificación del registro'
 			]
 		];
 

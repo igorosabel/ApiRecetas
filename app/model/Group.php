@@ -6,25 +6,25 @@ class Group extends OModel {
 		$table_name  = 'group';
 		$model = [
 			'id' => [
-				'type'    => Base::PK,
+				'type'    => OCore::PK,
 				'comment' => 'Id único de cada grupo'
 			],
 			'name' => [
-				'type'    => Base::TEXT,
+				'type'     => OCore::TEXT,
 				'nullable' => false,
-				'default' => null,
-				'size' => 50,
-				'comment' => 'Nombre del grupo de alimentos'
+				'default'  => null,
+				'size'     => 50,
+				'comment'  => 'Nombre del grupo de alimentos'
 			],
 			'created_at' => [
-				'type'    => Base::CREATED,
+				'type'    => OCore::CREATED,
 				'comment' => 'Fecha de creación del registro'
 			],
 			'updated_at' => [
-				'type'    => Base::UPDATED,
+				'type'     => OCore::UPDATED,
 				'nullable' => true,
-				'default' => null,
-				'comment' => 'Fecha de última modificación del registro'
+				'default'  => null,
+				'comment'  => 'Fecha de última modificación del registro'
 			]
 		];
 

@@ -6,32 +6,32 @@ class RecipeIngredient extends OModel {
 		$table_name  = 'recipe_ingredient';
 		$model = [
 			'id_recipe' => [
-				'type'    => Base::PK,
-				'incr' => false,
-				'ref' => 'recipe.id',
+				'type'    => OCore::PK,
+				'incr'    => false,
+				'ref'     => 'recipe.id',
 				'comment' => 'Id de la receta'
 			],
 			'id_ingredient' => [
-				'type'    => Base::PK,
-				'incr' => false,
-				'ref' => 'ingredient.id',
+				'type'    => OCore::PK,
+				'incr'    => false,
+				'ref'     => 'ingredient.id',
 				'comment' => 'Id del ingrediente'
 			],
 			'order' => [
-				'type'    => Base::NUM,
+				'type'     => OCore::NUM,
 				'nullable' => false,
-				'default' => null,
-				'comment' => ''
+				'default'  => null,
+				'comment'  => ''
 			],
 			'created_at' => [
-				'type'    => Base::CREATED,
+				'type'    => OCore::CREATED,
 				'comment' => 'Fecha de creación del registro'
 			],
 			'updated_at' => [
-				'type'    => Base::UPDATED,
+				'type'     => OCore::UPDATED,
 				'nullable' => true,
-				'default' => null,
-				'comment' => 'Fecha de modificación del registro'
+				'default'  => null,
+				'comment'  => 'Fecha de modificación del registro'
 			]
 		];
 

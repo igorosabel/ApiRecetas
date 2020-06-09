@@ -6,31 +6,31 @@ class DayRecipe extends OModel {
 		$table_name  = 'day_recipe';
 		$model = [
 			'week_day' => [
-				'type'    => Base::PK,
-				'incr' => false,
+				'type'    => OCore::PK,
+				'incr'    => false,
 				'comment' => 'Dia de la semana (1-7)'
 			],
 			'id_meal' => [
-				'type'    => Base::PK,
-				'incr' => false,
-				'ref' => 'meal.id',
+				'type'    => OCore::PK,
+				'incr'    => false,
+				'ref'     => 'meal.id',
 				'comment' => 'Id de la comida'
 			],
 			'id_recipe' => [
-				'type'    => Base::PK,
-				'incr' => false,
-				'ref' => 'recipe.id',
+				'type'    => OCore::PK,
+				'incr'    => false,
+				'ref'     => 'recipe.id',
 				'comment' => 'Id de la receta'
 			],
 			'created_at' => [
-				'type'    => Base::CREATED,
+				'type'    => OCore::CREATED,
 				'comment' => 'Fecha de creación del registro'
 			],
 			'updated_at' => [
-				'type'    => Base::UPDATED,
+				'type'     => OCore::UPDATED,
 				'nullable' => true,
-				'default' => null,
-				'comment' => 'Fecha de última modificación del registro'
+				'default'  => null,
+				'comment'  => 'Fecha de última modificación del registro'
 			]
 		];
 

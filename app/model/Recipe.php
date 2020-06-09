@@ -6,51 +6,51 @@ class Recipe extends OModel {
 		$table_name  = 'recipe';
 		$model = [
 			'id%252B' => [
-				'type'    => Base::PK,
+				'type'    => OCore::PK,
 				'comment' => 'Id único de cada receta'
 			],
 			'id_user' => [
-				'type'    => Base::NUM,
+				'type'    => OCore::NUM,
 				'nullable' => false,
-				'default' => null,
-				'ref' => 'user.id',
-				'comment' => 'Id del usuario que crea la receta'
+				'default'  => null,
+				'ref'      => 'user.id',
+				'comment'  => 'Id del usuario que crea la receta'
 			],
 			'name' => [
-				'type'    => Base::TEXT,
+				'type'     => OCore::TEXT,
 				'nullable' => false,
-				'default' => null,
-				'size' => 100,
-				'comment' => 'Nombre de la receta'
+				'default'  => null,
+				'size'     => 100,
+				'comment'  => 'Nombre de la receta'
 			],
 			'id_group' => [
-				'type'    => Base::NUM,
+				'type'     => OCore::NUM,
 				'nullable' => false,
-				'default' => null,
-				'ref' => 'group.id',
-				'comment' => 'Id del grupo de alimentos'
+				'default'  => null,
+				'ref'      => 'group.id',
+				'comment'  => 'Id del grupo de alimentos'
 			],
 			'time' => [
-				'type'    => Base::NUM,
+				'type'     => OCore::NUM,
 				'nullable' => false,
-				'default' => null,
-				'comment' => 'Tiempo para preparar la receta'
+				'default'  => null,
+				'comment'  => 'Tiempo para preparar la receta'
 			],
 			'instructions' => [
-				'type'    => Base::LONGTEXT,
+				'type'     => OCore::LONGTEXT,
 				'nullable' => true,
-				'default' => null,
-				'comment' => 'Instrucciones para preparar la receta'
+				'default'  => null,
+				'comment'  => 'Instrucciones para preparar la receta'
 			],
 			'created_at' => [
-				'type'    => Base::CREATED,
+				'type'    => OCore::CREATED,
 				'comment' => 'Fecha de creación del registro'
 			],
 			'updated_at' => [
-				'type'    => Base::UPDATED,
+				'type'     => OCore::UPDATED,
 				'nullable' => true,
-				'default' => null,
-				'comment' => 'Fecha de última modificación del registro'
+				'default'  => null,
+				'comment'  => 'Fecha de última modificación del registro'
 			]
 		];
 

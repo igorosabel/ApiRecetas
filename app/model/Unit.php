@@ -6,25 +6,25 @@ class Unit extends OModel {
 		$table_name  = 'unit';
 		$model = [
 			'id' => [
-				'type'    => Base::PK,
+				'type'    => OCore::PK,
 				'comment' => 'Id único de cada unidad'
 			],
 			'name' => [
-				'type'    => Base::TEXT,
+				'type'     => OCore::TEXT,
 				'nullable' => true,
-				'default' => null,
-				'size' => 50,
-				'comment' => 'Nombre de la unidad (gr, ml)'
+				'default'  => null,
+				'size'     => 50,
+				'comment'  => 'Nombre de la unidad (gr, ml)'
 			],
 			'created_at' => [
-				'type'    => Base::CREATED,
+				'type'    => OCore::CREATED,
 				'comment' => 'Fecha de creación del registro'
 			],
 			'updated_at' => [
-				'type'    => Base::UPDATED,
+				'type'     => OCore::UPDATED,
 				'nullable' => true,
-				'default' => null,
-				'comment' => 'Fecha de última modificación del registro'
+				'default'  => null,
+				'comment'  => 'Fecha de última modificación del registro'
 			]
 		];
 

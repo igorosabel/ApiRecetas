@@ -6,39 +6,39 @@ class User extends OModel {
 		$table_name  = 'user';
 		$model = [
 			'id' => [
-				'type'    => Base::PK,
+				'type'    => OCore::PK,
 				'comment' => 'Id único de cada usuario'
 			],
 			'email' => [
-				'type'    => Base::TEXT,
+				'type'     => OCore::TEXT,
 				'nullable' => false,
-				'default' => null,
-				'size' => 100,
-				'comment' => 'Email del usuario'
+				'default'  => null,
+				'size'     => 100,
+				'comment'  => 'Email del usuario'
 			],
 			'pass' => [
-				'type'    => Base::TEXT,
+				'type'     => OCore::TEXT,
 				'nullable' => false,
-				'default' => null,
-				'size' => 100,
-				'comment' => 'Contraseña cifrada del usuario'
+				'default'  => null,
+				'size'     => 100,
+				'comment'  => 'Contraseña cifrada del usuario'
 			],
 			'name' => [
-				'type'    => Base::TEXT,
+				'type'     => OCore::TEXT,
 				'nullable' => false,
-				'default' => null,
-				'size' => 50,
-				'comment' => 'Nombre del usuario'
+				'default'  => null,
+				'size'     => 50,
+				'comment'  => 'Nombre del usuario'
 			],
 			'created_at' => [
-				'type'    => Base::CREATED,
+				'type'    => OCore::CREATED,
 				'comment' => 'Fecha de creación del registro'
 			],
 			'updated_at' => [
-				'type'    => Base::UPDATED,
+				'type'     => OCore::UPDATED,
 				'nullable' => true,
-				'default' => null,
-				'comment' => 'Fecha de última modificación del registro'
+				'default'  => null,
+				'comment'  => 'Fecha de última modificación del registro'
 			]
 		];
 
