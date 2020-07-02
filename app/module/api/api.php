@@ -7,7 +7,7 @@ class api extends OModule {
 	 *
 	 * @return void
 	 */
-	function login(ORequest $req): void {
+	public function login(ORequest $req): void {
 		$status = 'ok';
 		$email  = $req->getParamString('email');
 		$pass   = $req->getParamString('pass');
