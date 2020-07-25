@@ -1,10 +1,14 @@
 <?php declare(strict_types=1);
+/**
+ * @prefix /api
+ * @type json
+*/
 class api extends OModule {
 	/**
 	 * Función para iniciar sesión en la aplicación
 	 *
+	 * @url /login
 	 * @param ORequest $req Request object with method, headers, parameters and filters used
-	 *
 	 * @return void
 	 */
 	public function login(ORequest $req): void {
