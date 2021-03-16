@@ -1,4 +1,9 @@
 <?php declare(strict_types=1);
+
+namespace OsumiFramework\App\Model;
+
+use OsumiFramework\OFW\DB\OModel;
+
 class DayRecipe extends OModel {
 	/**
 	 * Configures current model object based on data-base table structure
@@ -6,28 +11,28 @@ class DayRecipe extends OModel {
 		$table_name  = 'day_recipe';
 		$model = [
 			'week_day' => [
-				'type'    => OCore::PK,
+				'type'    => OModel::PK,
 				'incr'    => false,
 				'comment' => 'Dia de la semana (1-7)'
 			],
 			'id_meal' => [
-				'type'    => OCore::PK,
+				'type'    => OModel::PK,
 				'incr'    => false,
 				'ref'     => 'meal.id',
 				'comment' => 'Id de la comida'
 			],
 			'id_recipe' => [
-				'type'    => OCore::PK,
+				'type'    => OModel::PK,
 				'incr'    => false,
 				'ref'     => 'recipe.id',
 				'comment' => 'Id de la receta'
 			],
 			'created_at' => [
-				'type'    => OCore::CREATED,
+				'type'    => OModel::CREATED,
 				'comment' => 'Fecha de creación del registro'
 			],
 			'updated_at' => [
-				'type'     => OCore::UPDATED,
+				'type'     => OModel::UPDATED,
 				'nullable' => true,
 				'default'  => null,
 				'comment'  => 'Fecha de última modificación del registro'

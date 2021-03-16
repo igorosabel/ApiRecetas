@@ -1,16 +1,24 @@
 <?php declare(strict_types=1);
-/**
- * @prefix /api
- * @type json
-*/
+
+namespace OsumiFramework\App\Module;
+
+use OsumiFramework\OFW\Core\OModule;
+use OsumiFramework\OFW\Web\ORequest;
+use OsumiFramework\OFW\Routing\ORoute;
+use OsumiFramework\App\Model\User;
+
+#[ORoute(
+	type: 'json',
+	prefix: '/api'
+)]
 class api extends OModule {
 	/**
 	 * Función para iniciar sesión en la aplicación
 	 *
-	 * @url /login
 	 * @param ORequest $req Request object with method, headers, parameters and filters used
 	 * @return void
 	 */
+	#[ORoute('/login')]
 	public function login(ORequest $req): void {
 		$status = 'ok';
 		$email  = $req->getParamString('email');
@@ -32,7 +40,7 @@ class api extends OModule {
 					$tk = new OToken($this->getConfig()->getExtra('secret'));
 					$tk->addParam('id',   $id);
 					$tk->addParam('email', $email);
-					$tk->addParam('exp', mktime() + (24 * 60 * 60));
+					$tk->addParam('exp', time() + (24 * 60 * 60));
 					$token = $tk->getToken();
 				}
 				else {

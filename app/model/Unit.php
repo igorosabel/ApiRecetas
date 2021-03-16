@@ -1,4 +1,9 @@
 <?php declare(strict_types=1);
+
+namespace OsumiFramework\App\Model;
+
+use OsumiFramework\OFW\DB\OModel;
+
 class Unit extends OModel {
 	/**
 	 * Configures current model object based on data-base table structure
@@ -6,22 +11,22 @@ class Unit extends OModel {
 		$table_name  = 'unit';
 		$model = [
 			'id' => [
-				'type'    => OCore::PK,
+				'type'    => OModel::PK,
 				'comment' => 'Id único de cada unidad'
 			],
 			'name' => [
-				'type'     => OCore::TEXT,
+				'type'     => OModel::TEXT,
 				'nullable' => true,
 				'default'  => null,
 				'size'     => 50,
 				'comment'  => 'Nombre de la unidad (gr, ml)'
 			],
 			'created_at' => [
-				'type'    => OCore::CREATED,
+				'type'    => OModel::CREATED,
 				'comment' => 'Fecha de creación del registro'
 			],
 			'updated_at' => [
-				'type'     => OCore::UPDATED,
+				'type'     => OModel::UPDATED,
 				'nullable' => true,
 				'default'  => null,
 				'comment'  => 'Fecha de última modificación del registro'

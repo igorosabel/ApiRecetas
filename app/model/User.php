@@ -1,4 +1,9 @@
 <?php declare(strict_types=1);
+
+namespace OsumiFramework\App\Model;
+
+use OsumiFramework\OFW\DB\OModel;
+
 class User extends OModel {
 	/**
 	 * Configures current model object based on data-base table structure
@@ -6,36 +11,36 @@ class User extends OModel {
 		$table_name  = 'user';
 		$model = [
 			'id' => [
-				'type'    => OCore::PK,
+				'type'    => OModel::PK,
 				'comment' => 'Id único de cada usuario'
 			],
 			'email' => [
-				'type'     => OCore::TEXT,
+				'type'     => OModel::TEXT,
 				'nullable' => false,
 				'default'  => null,
 				'size'     => 100,
 				'comment'  => 'Email del usuario'
 			],
 			'pass' => [
-				'type'     => OCore::TEXT,
+				'type'     => OModel::TEXT,
 				'nullable' => false,
 				'default'  => null,
 				'size'     => 100,
 				'comment'  => 'Contraseña cifrada del usuario'
 			],
 			'name' => [
-				'type'     => OCore::TEXT,
+				'type'     => OModel::TEXT,
 				'nullable' => false,
 				'default'  => null,
 				'size'     => 50,
 				'comment'  => 'Nombre del usuario'
 			],
 			'created_at' => [
-				'type'    => OCore::CREATED,
+				'type'    => OModel::CREATED,
 				'comment' => 'Fecha de creación del registro'
 			],
 			'updated_at' => [
-				'type'     => OCore::UPDATED,
+				'type'     => OModel::UPDATED,
 				'nullable' => true,
 				'default'  => null,
 				'comment'  => 'Fecha de última modificación del registro'
