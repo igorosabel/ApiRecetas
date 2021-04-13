@@ -1,4 +1,5 @@
 {
+  "name": "Recetas",
   "db": {
     "host": "localhost",
     "user": "recetas",
@@ -11,5 +12,5 @@
   "admin_email": "inigo.gorosabel@gmail.com",
   "default_title": "Recetas",
   "lang": "es",
-  "log_level": "DEBUG"
+  "log_level": "ERROR"
 }
