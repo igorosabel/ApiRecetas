@@ -1,16 +1,19 @@
 {
-  "name": "Recetas",
-  "db": {
-    "host": "localhost",
-    "user": "recetas",
-    "pass": "a86*Wd3x",
-    "name": "recetas",
-    "charset": "utf8mb4",
-    "collate": "utf8mb4_unicode_ci"
-  },
-  "base_url": "https://apirecetas.osumi.es",
-  "admin_email": "inigo.gorosabel@gmail.com",
-  "default_title": "Recetas",
-  "lang": "es",
-  "log_level": "ERROR"
+	"name": "Recetas",
+	"db": {
+		"host": "localhost",
+		"user": "recetas",
+		"pass": "a86*Wd3x",
+		"name": "recetas",
+		"charset": "utf8mb4",
+		"collate": "utf8mb4_unicode_ci"
+	},
+	"base_url": "https://apirecetas.osumi.es",
+	"admin_email": "inigo.gorosabel@gmail.com",
+	"default_title": "Recetas",
+	"lang": "es",
+	"log_level": "ERROR",
+	"extra": {
+		"secret": "58c3193f9f7ebd2516ed270dc4c7fbd6"
+	}
 }
