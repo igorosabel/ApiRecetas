@@ -5,17 +5,17 @@ namespace OsumiFramework\App\Model;
 use OsumiFramework\OFW\DB\OModel;
 use OsumiFramework\App\Model\Ingredient;
 
-class RecipeIngredient extends OModel {
+class ShoppingListIngredient extends OModel {
 	/**
 	 * Configures current model object based on data-base table structure
 	 */	function __construct() {
-		$table_name  = 'recipe_ingredient';
+		$table_name  = 'shopping_list_ingredient';
 		$model = [
-			'id_recipe' => [
+			'id_shopping_list' => [
 				'type'    => OModel::PK,
 				'incr'    => false,
-				'ref'     => 'recipe.id',
-				'comment' => 'Id de la receta'
+				'ref'     => 'shopping_list.id',
+				'comment' => 'Id de la lista de la compra'
 			],
 			'id_ingredient' => [
 				'type'    => OModel::PK,
@@ -27,13 +27,13 @@ class RecipeIngredient extends OModel {
 				'type'     => OModel::NUM,
 				'nullable' => false,
 				'default'  => null,
-				'comment'  => 'Orden del ingrediente entre todos los ingredientes de una receta'
+				'comment'  => 'Orden del ingrediente entre los elementos de la lista'
 			],
 			'amount' => [
 				'type'     => OModel::TEXT,
 				'nullable' => true,
 				'default'  => null,
-				'comment'  => 'Cantidad del ingrediente a usar en la receta'
+				'comment'  => 'Cantidad del ingrediente a comprar'
 			],
 			'created_at' => [
 				'type'    => OModel::CREATED,

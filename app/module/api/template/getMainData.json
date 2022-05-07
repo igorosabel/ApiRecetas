@@ -1,0 +1,12 @@
+{
+	"status": "{{status}}",
+	"dayRecipes": [
+{{day_recipes}}
+	],
+	"recipes": [
+{{recipes}}
+	],
+	"shoppingLists": [
+{{shopping_lists}}
+	]
+}

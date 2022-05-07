@@ -30,6 +30,7 @@ class Meal extends OModel {
 			],
 			'enabled' => [
 				'type'    => OModel::BOOL,
+				'default' => true,
 				'comment' => 'Indica si la comida está activa 1 o no 0'
 			],
 			'start_time' => [
