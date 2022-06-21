@@ -5,5 +5,5 @@ namespace OsumiFramework\App\Component;
 use OsumiFramework\OFW\Core\OComponent;
 
 class ShoppinglistListComponent extends OComponent {
-  private string $depends = 'model/shoppinglist';
+	public array $depends = ['model/shoppinglist'];
 }
