@@ -5,7 +5,7 @@ namespace OsumiFramework\App\Module;
 use OsumiFramework\OFW\Routing\OModule;
 
 #[OModule(
-	actions: 'login, register, getMainData',
+	actions: ['login', 'register', 'getMainData'],
 	type: 'json',
 	prefix: '/api'
 )]
