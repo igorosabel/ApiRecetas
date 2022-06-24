@@ -12,7 +12,7 @@ use OsumiFramework\App\Component\ShoppinglistListComponent;
 
 #[OModuleAction(
 	url: '/getMainData',
-	filter: 'login',
+	filters: ['login'],
 	components: ['model/dayrecipe_list', 'model/recipe_list', 'model/shoppinglist_list']
 )]
 class getMainDataAction extends OAction {
