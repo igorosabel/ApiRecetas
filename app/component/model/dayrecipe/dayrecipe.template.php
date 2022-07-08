@@ -1,6 +1,6 @@
 <?php
-use OsumiFramework\App\Component\MealComponent;
-use OsumiFramework\App\Component\RecipeComponent;
+use OsumiFramework\App\Component\Model\MealComponent;
+use OsumiFramework\App\Component\Model\RecipeComponent;
 
 if (is_null($values['dayrecipe'])) {
 ?>

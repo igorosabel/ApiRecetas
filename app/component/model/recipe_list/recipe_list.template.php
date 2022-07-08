@@ -1,5 +1,5 @@
 <?php
-use OsumiFramework\App\Component\RecipeComponent;
+use OsumiFramework\App\Component\Model\RecipeComponent;
 
 foreach ($values['list'] as $i => $recipe) {
 	$recipe_component = new RecipeComponent([ 'recipe' => $recipe ]);

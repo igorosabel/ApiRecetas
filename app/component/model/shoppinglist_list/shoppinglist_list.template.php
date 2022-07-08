@@ -1,5 +1,5 @@
 <?php
-use OsumiFramework\App\Component\ShoppinglistComponent;
+use OsumiFramework\App\Component\Model\ShoppinglistComponent;
 
 foreach ($values['list'] as $i => $shoppinglist) {
 	$shoppinglist_component = new ShoppinglistComponent([ 'shoppinglist' => $shoppinglist ]);

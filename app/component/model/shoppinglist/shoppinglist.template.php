@@ -1,5 +1,5 @@
 <?php
-use OsumiFramework\App\Component\IngredientComponent;
+use OsumiFramework\App\Component\Model\IngredientComponent;
 if (is_null($values['shoppinglist'])) {
 ?>
 null

@@ -1,5 +1,5 @@
 <?php
-use OsumiFramework\App\Component\DayrecipeComponent;
+use OsumiFramework\App\Component\Model\DayrecipeComponent;
 
 foreach ($values['list'] as $i => $dayrecipe) {
 	$day_recipe = new DayrecipeComponent([ 'dayrecipe' => $dayrecipe ]);

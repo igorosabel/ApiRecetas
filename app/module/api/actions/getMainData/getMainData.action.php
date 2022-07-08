@@ -6,14 +6,13 @@ use OsumiFramework\OFW\Routing\OModuleAction;
 use OsumiFramework\OFW\Routing\OAction;
 use OsumiFramework\OFW\Web\ORequest;
 use OsumiFramework\App\model\User;
-use OsumiFramework\App\Component\DayrecipeListComponent;
-use OsumiFramework\App\Component\RecipeListComponent;
-use OsumiFramework\App\Component\ShoppinglistListComponent;
+use OsumiFramework\App\Component\Model\DayrecipeListComponent;
+use OsumiFramework\App\Component\Model\RecipeListComponent;
+use OsumiFramework\App\Component\Model\ShoppinglistListComponent;
 
 #[OModuleAction(
 	url: '/getMainData',
-	filters: ['login'],
-	components: ['model/dayrecipe_list', 'model/recipe_list', 'model/shoppinglist_list']
+	filters: ['login']
 )]
 class getMainDataAction extends OAction {
 	/**

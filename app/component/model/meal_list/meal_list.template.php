@@ -1,5 +1,5 @@
 <?php
-use OsumiFramework\App\Component\MealComponent;
+use OsumiFramework\App\Component\Model\MealComponent;
 
 foreach ($values['list'] as $i => $meal) {
 	$meal_component = new MealComponent([ 'meal' => $meal ]);
