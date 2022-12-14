@@ -3,48 +3,57 @@
 namespace OsumiFramework\App\Model;
 
 use OsumiFramework\OFW\DB\OModel;
+use OsumiFramework\OFW\DB\OModelGroup;
+use OsumiFramework\OFW\DB\OModelField;
 use OsumiFramework\App\Model\Meal;
 use OsumiFramework\App\Model\Recipe;
 
 class DayRecipe extends OModel {
   function __construct() {
-		$model = [
-			'id' => [
-				'type'    => OModel::PK,
-				'comment' => 'Id único de cada comida'
-			],
-			'week_day' => [
-				'type'    => OModel::NUM,
-				'nullable' => false,
-				'comment' => 'Dia de la semana (1-7)'
-			],
-			'id_meal' => [
-				'type'    => OModel::NUM,
-				'ref'     => 'meal.id',
-				'comment' => 'Id de la comida'
-			],
-			'id_recipe' => [
-				'type'    => OModel::NUM,
-				'nullable' => true,
-				'default' => null,
-				'comment' => 'Id de la receta'
-			],
-			'id_user' => [
-				'type'    => OModel::NUM,
-				'ref'     => 'user.id',
-				'comment' => 'Id del usuario'
-			],
-			'created_at' => [
-				'type'    => OModel::CREATED,
-				'comment' => 'Fecha de creación del registro'
-			],
-			'updated_at' => [
-				'type'     => OModel::UPDATED,
-				'nullable' => true,
-				'default'  => null,
-				'comment'  => 'Fecha de última modificación del registro'
-			]
-		];
+		$model = new OModelGroup(
+			new OModelField(
+				name: 'id',
+        type: OMODEL_PK,
+        comment: 'Id único de cada comida'
+			),
+			new OModelField(
+				name: 'week_day',
+        type: OMODEL_NUM,
+        nullable: false,
+				comment: 'Dia de la semana (1-7)'
+			),
+			new OModelField(
+				name: 'id_meal',
+        type: OMODEL_NUM,
+        ref: 'meal.id',
+				comment: 'Id de la comida'
+			),
+			new OModelField(
+				name: 'id_recipe',
+        type: OMODEL_NUM,
+        nullable: true,
+				default: null,
+				comment: 'Id de la receta'
+			),
+			new OModelField(
+				name: 'id_user',
+        type: OMODEL_NUM,
+        ref: 'user.id',
+				comment: 'Id del usuario'
+			),
+      new OModelField(
+				name: 'created_at',
+				type: OMODEL_CREATED,
+				comment: 'Fecha de creación del registro'
+			),
+			new OModelField(
+				name: 'updated_at',
+				type: OMODEL_UPDATED,
+				nullable: true,
+				default: null,
+				comment: 'Fecha de última modificación del registro'
+			)
+		);
 
 		parent::load($model);
 	}

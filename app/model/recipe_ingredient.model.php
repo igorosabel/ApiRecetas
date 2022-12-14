@@ -3,46 +3,54 @@
 namespace OsumiFramework\App\Model;
 
 use OsumiFramework\OFW\DB\OModel;
+use OsumiFramework\OFW\DB\OModelGroup;
+use OsumiFramework\OFW\DB\OModelField;
 use OsumiFramework\App\Model\Ingredient;
 
 class RecipeIngredient extends OModel {
 	function __construct() {
-		$model = [
-			'id_recipe' => [
-				'type'    => OModel::PK,
-				'incr'    => false,
-				'ref'     => 'recipe.id',
-				'comment' => 'Id de la receta'
-			],
-			'id_ingredient' => [
-				'type'    => OModel::PK,
-				'incr'    => false,
-				'ref'     => 'ingredient.id',
-				'comment' => 'Id del ingrediente'
-			],
-			'order' => [
-				'type'     => OModel::NUM,
-				'nullable' => false,
-				'default'  => null,
-				'comment'  => 'Orden del ingrediente entre todos los ingredientes de una receta'
-			],
-			'amount' => [
-				'type'     => OModel::TEXT,
-				'nullable' => true,
-				'default'  => null,
-				'comment'  => 'Cantidad del ingrediente a usar en la receta'
-			],
-			'created_at' => [
-				'type'    => OModel::CREATED,
-				'comment' => 'Fecha de creación del registro'
-			],
-			'updated_at' => [
-				'type'     => OModel::UPDATED,
-				'nullable' => true,
-				'default'  => null,
-				'comment'  => 'Fecha de modificación del registro'
-			]
-		];
+		$model = new OModelGroup(
+			new OModelField(
+				name: 'id_recipe',
+				type: OMODEL_PK,
+				incr: false,
+				ref: 'recipe.id',
+				comment: 'Id de la receta'
+			),
+			new OModelField(
+				name: 'id_ingredient',
+				type: OMODEL_PK,
+				incr: false,
+				ref: 'ingredient.id',
+				comment: 'Id del ingrediente'
+			),
+			new OModelField(
+				name: 'order',
+				type: OMODEL_NUM,
+				nullable: false,
+				default: null,
+				comment: 'Orden del ingrediente entre todos los ingredientes de una receta'
+			),
+			new OModelField(
+				name: 'amount',
+				type: OMODEL_TEXT,
+				nullable: true,
+				default: null,
+				comment: 'Cantidad del ingrediente a usar en la receta'
+			),
+			new OModelField(
+				name: 'created_at',
+				type: OMODEL_CREATED,
+				comment: 'Fecha de creación del registro'
+			),
+			new OModelField(
+				name: 'updated_at',
+				type: OMODEL_UPDATED,
+				nullable: true,
+				default: null,
+				comment: 'Fecha de última modificación del registro'
+			)
+		);
 
 		parent::load($model);
 	}
